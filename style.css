@@ -21,7 +21,7 @@ body {
   box-sizing: border-box;
 }
 section {
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
   overflow: hidden;
   padding-block: 80px;
@@ -305,7 +305,39 @@ nav ul li a {
   color: var(--light-color);
   transition: all 0.3s ease;
 }
-
+/*contact */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+}
+.card_contact {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  color: var(--dark-color);
+  box-shadow: 0 1px 5px var(--primary-color);
+  padding: 20px;
+  margin: 20px 0;
+  width: 400px;
+  height: 300px;
+  transition: all 0.3s ease;
+}
+.card_contact h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.card_contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+.card_contact ul li::marker {
+  content: "👉 ";
+}
 /*media */
 @media (max-width: 1280px) {
   .landing_section {
@@ -328,6 +360,10 @@ nav ul li a {
     margin: 30px 0;
     height: 300px;
     width: 300px;
+  }
+  .card_contact {
+    width: 300px;
+    height: 400px;
   }
 }
 
