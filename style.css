@@ -21,7 +21,6 @@ body {
   box-sizing: border-box;
 }
 section {
-  min-height: 80vh;
   position: relative;
   overflow: hidden;
   padding-block: 80px;
@@ -69,6 +68,9 @@ nav ul li a {
 }
 
 /*landing */
+#home {
+  min-height: 80vh;
+}
 .landing_text {
   position: absolute;
   top: 50%;
@@ -156,6 +158,7 @@ nav ul li a {
 /*services */
 .services_section {
   text-align: center;
+  min-height: 80vh;
 }
 .services_section h1 {
   font-size: 50px;
