@@ -3,22 +3,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const textArray = ["Web Developer", "Content Creator"];
     var currentIndex = 0;
 
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
     function changeText() {
       textElement.textContent = textArray[currentIndex];
       currentIndex = (currentIndex + 1) % textArray.length;
       setTimeout(function() {
         textElement.style.opacity = 1;
-      }, 10); // Delay for a smoother transition
+      }, 10);
     }
 
     function fadeOutText() {
       textElement.style.opacity = 0;
-      setTimeout(changeText, 500); // Adjust the duration based on your transition time
+      setTimeout(changeText, 500); 
     }
 
-    // Initial setup
     changeText();
+    setInterval(fadeOutText, 4000);
+  
 
-    // Set interval to change text every, for example, 3 seconds
-    setInterval(fadeOutText, 4000); // Adjust the interval based on your preference
   });

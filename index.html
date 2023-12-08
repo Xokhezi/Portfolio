@@ -9,15 +9,16 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-    <title>My Portfolio</title>
+    <title>👋 Tom Němec - Web/Content</title>
   </head>
   <body>
     <nav>
       <h3 class="header_nav">Tomáš Němec</h3>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <section class="landing_section" id="home">
@@ -32,9 +33,15 @@
         </p>
 
         <div class="social_bar">
-          <a href="#" class="icon"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="icon"><i class="bi bi-github"></i></a>
-          <a href="#" class="icon"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.instagram.com/tom.is.coding/" class="icon"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://github.com/Xokhezi" class="icon"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="https://www.youtube.com/@Tomiscodin" class="icon"
+            ><i class="bi bi-youtube"></i
+          ></a>
         </div>
         <button class="btn-primary popIn">Download CV</button>
       </div>
@@ -78,6 +85,11 @@
       <h1>My <span class="name">projects</span></h1>
       <div class="row">
         <div class="card_project">
+          <a
+            href="https://www.instagram.com/tom.is.coding/"
+            class="card_project-button"
+            >Go there</a
+          >
           <img
             class="card_project_img"
             style="transform: translateY(10%)"
@@ -88,7 +100,7 @@
           <div class="card_project-description">
             <h4>
               Instagram
-              <a href="#" class="icon"><i class="bi bi-instagram"></i></a>
+              <i class="bi bi-instagram"></i>
             </h4>
             <p>
               My bussiness Instagram account. I post there my work and also
@@ -98,12 +110,15 @@
           </div>
         </div>
         <div class="card_project">
+          <a href="https://github.com/Xokhezi" class="card_project-button"
+            >Go there</a
+          >
           <img class="card_project_img gh" src="gh.png" alt="" />
           <div class="card_project-description-background"></div>
           <div class="card_project-description">
             <h4>
               Github
-              <a href="#" class="icon"><i class="bi bi-github"></i></a>
+              <i class="bi bi-github"></i>
             </h4>
             <p>
               All my personal projects are stored on my Github account. I use
@@ -113,12 +128,30 @@
           </div>
         </div>
         <div class="card_project">
+          <img class="card_project_img ds" src="ds.jpg" alt="" />
+          <div class="card_project-description-background"></div>
+          <div class="card_project-description">
+            <h4>
+              Discord Bots
+              <i class="bi bi-discord"></i>
+            </h4>
+            <p>
+              I do have expirence with building custom Discord bots. I have made
+              few bots for my friends and also for my own Discord server using
+              node.js.
+            </p>
+          </div>
+        </div>
+        <div class="card_project">
+          <a href="https://github.com/Xokhezi" class="card_project-button"
+            >Go there</a
+          >
           <img class="card_project_img" src="carma.png" alt="" />
           <div class="card_project-description-background"></div>
           <div class="card_project-description">
             <h4>
               Car Managment App
-              <a href="#" class="icon"><i class="bi bi-github"></i></a>
+              <i class="bi bi-github"></i>
             </h4>
             <p>
               Angular/.Net app used external validation service. App used for
@@ -126,7 +159,6 @@
             </p>
           </div>
         </div>
-        <div class="card_project"></div>
       </div>
     </section>
   </body>
