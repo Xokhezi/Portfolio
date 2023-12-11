@@ -6,6 +6,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll("nav ul li a");
+  const links = document.querySelectorAll('.nav-link');
+    
+if (links.length) {
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      links.forEach((link) => {
+          link.classList.remove('active');
+      });
+      e.preventDefault();
+      link.classList.add('active');
+    });
+  });
+}
 
   const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
