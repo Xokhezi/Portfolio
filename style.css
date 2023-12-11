@@ -341,6 +341,27 @@ nav ul li a {
 .card_contact ul li::marker {
   content: "👉 ";
 }
+
+/*scroll animation */
+.fadein {
+  opacity: 0;
+  transition: all 0.7s ease-out;
+}
+.slidein {
+  opacity: 0;
+  transition: all 0.7s ease-out;
+  transform: translateX(-100px);
+}
+.popup {
+  opacity: 0;
+  transition: all 0.7s ease-out;
+  scale: 0.4;
+}
+.scroll-animation {
+  opacity: 1;
+  scale: 1;
+  transform: translateX(0);
+}
 /*media */
 @media (max-width: 1280px) {
   .landing_section {
