@@ -108,6 +108,8 @@ nav ul li a {
   top: 20%;
   right: 5%;
   height: 450px;
+  max-width: 550px;
+  object-fit: cover;
   border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
 }
 .btn-primary {
@@ -307,6 +309,15 @@ nav ul li a {
   font-size: 20px;
   color: var(--light-color);
   transition: all 0.3s ease;
+}
+/*newsletter */
+.newsletter {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
 }
 /*contact */
 #contact {
