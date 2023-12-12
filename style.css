@@ -108,7 +108,7 @@ nav ul li a {
   top: 20%;
   right: 5%;
   height: 450px;
-  max-width: 550px;
+  max-width: 450px;
   object-fit: cover;
   border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
 }
