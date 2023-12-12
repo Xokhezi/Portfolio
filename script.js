@@ -31,7 +31,7 @@ if (links.length) {
           
       })
   },
-     { threshold: 0.3
+     { threshold: 0.2
      });
     for (let i = 0; i < the_animation.length; i++) {
      const elements = the_animation[i];
